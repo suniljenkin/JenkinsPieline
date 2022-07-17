@@ -20,6 +20,7 @@ pipeline{
         stage('Release'){
             steps{
                  echo 'Hello World Release'
+                mail bcc: '', body: 'Test email from jenkins', cc: '', from: '', replyTo: '', subject: 'Test email from jenkins', to: 'nsunilkumarreddy34@gmail.com'
             }
         }
     }
